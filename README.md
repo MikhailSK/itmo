@@ -1,12 +1,71 @@
-Archive of various things I did at ITMO University.
+Archive of various things I did at ITMO University. Sizeable assignments are in separate repos, linked from this readme.
 
 # Term 5
 
 # Term 4
 
+## Discrete mathematics
+
+### Homework
+
+- [1-15](discrete%20mathematics/hw4/1-15.md)
+- [16-33](discrete%20mathematics/hw4/16-33.md)
+- [34-50](discrete%20mathematics/hw4/34-50.md)
+- [51-66](discrete%20mathematics/hw4/51-66.md)
+- [67-81](discrete%20mathematics/hw4/67-81.pdf)
+- [82-99](discrete%20mathematics/hw4/82-99.pdf)
+- [112-132](discrete%20mathematics/hw4/112-132.pdf)
+- [133-147](discrete%20mathematics/hw4/133-147.md)
+- [148-167](discrete%20mathematics/hw4/148-167.pdf)
+- [168-184](discrete%20mathematics/hw4/168-184.pdf)
+- [185-203](discrete%20mathematics/hw4/185-203.pdf)
+- [206-207](discrete%20mathematics/hw4/206-207.pdf)
+
+### Labs
+
+[4](discrete%20mathematics/labs/4.1/)
+
 # Term 3
 
+## Discrete mathematics
+
+### Homework
+
+- [1-56](discrete%20mathematics/hw3/main.md)
+- [57-72](discrete%20mathematics/hw3/57-72.md)
+- [73-87](discrete%20mathematics/hw3/73-87.md)
+- [88-106](discrete%20mathematics/hw3/88-106.md)
+- [107-126](discrete%20mathematics/hw3/107-126.md)
+- [127-143](discrete%20mathematics/hw3/127-143.md)
+- [144-159](discrete%20mathematics/hw3/144-159.md)
+
+### Labs
+
+[1](discrete%20mathematics/labs/3.1)
+
 # Term 2
+
+## Discrete mathematics
+
+### Homework
+
+- [17-33](discrete%20mathematics/hw2/17-33.md)
+- [34-49](discrete%20mathematics/hw2/34-49.md)
+- [50-65](discrete%20mathematics/hw2/50-65.md)
+- [67-83](discrete%20mathematics/hw2/67-83.md)
+- [77th task](discrete%20mathematics/hw2/77.pdf), especially proud of this one
+- [85-100](discrete%20mathematics/hw2/85-100.md)
+- [101-120](discrete%20mathematics/hw2/101-120.md)
+- [121-141](discrete%20mathematics/hw2/121-141.md)
+- [142-158](discrete%20mathematics/hw2/142-158.md)
+- [159-173](discrete%20mathematics/hw2/159-173.md)
+- [174-186](discrete%20mathematics/hw2/174-186.md)
+- [187-203](discrete%20mathematics/hw2/187-203.md)
+
+### Labs
+
+- [3](discrete%20mathematics/hw2/contests/3)
+- [4](discrete%20mathematics/hw2/contests/4)
 
 ## Programming paradigms
 

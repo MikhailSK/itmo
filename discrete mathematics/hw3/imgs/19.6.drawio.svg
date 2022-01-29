@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="281px" height="286px" viewBox="-0.5 -0.5 281 286" content="&lt;mxfile host=&quot;5ac0515c-34ef-4dbf-858f-42bb00b67775&quot; modified=&quot;2020-09-10T13:07:23.398Z&quot; agent=&quot;5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) code-oss/1.47.3 Chrome/78.0.3904.130 Electron/7.1.14 Safari/537.36&quot; etag=&quot;Fz46YTOxXNbSQDx6pHEy&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Page-1&quot;&gt;5VpNc6M4EP01vqoktT5ax5nszOxlq7YqhzlTRrGpxcaFSezMrx8RUACBpxgngDObgwMtIVmv32t1C6/gbnf+lkeH7T9ZbNMVp/F5BX+tOAdF3WdpeK4NlFeGTZ7ElYk1hvvkh62N9XObxyS2x07HIsvSIjl0jetsv7fromOL8jw7dbs9ZGl31kO0sT3D/TpK+9bvSVxsKyty3dj/tslm62dmylQtu8h3rldy3EZxdmqZ4MsK7vIsK6qr3fnOpiV2Hpfqua8XWl+/WG73xZgHatyfovSxXlv9vYpnv1j3gMPV3Xw+bZPC3h+iddlycp51tm2xS90dc5fR8VCB/ZCcrRv/80OSpndZmuXOts/25RDHIs/+s9644vD15a/snO2LIXt/RfUin2xe2HPLVK/wm812tsifXZe6lcsabU83Xd+fGud5h2xbfvO2qKbL5nXkBlF3UYM6DDD8HwGWMB/AagTA+/hTqfoGpRaolwG7CMwxe8zXtuPfIso3tu6ForLZuBNF+ui10JED6HhbbtOoSJ66sWcIsnqGf7PEfeHGOYISSjkTXEhmGAgd+IoR4f4ZChQNQ9kdv1prPWQ7kASzAHQpIDDwbYVQb6AX975iMsrjYozLP7ymmA4ApfNpylNkKVF5D7dVpfVtqUpJghINcIboRCWDHWaw9XdF5fIGggoMGA4IXErRpQRDAlJRRhlXRkitJpMcLksI3ueD58iN8AEEJ4Y3Hu9F2W7ztVGWakI1o0ojY6ikhC4hzHDz+xNC9yPEeakgPEWwNfMFW22W1ZZ3ZVtccGPacmGQSnS8lspQwwNpMWKUq7EYSAbI9JXSQkpc9lMNhEKzYBIkFB0xpBFaAoiphOWTxxtIbt5BV8ADXan5dOUz2Ql0FUfHbYnnS7dRIvNubYuM35TIwhpOyMAH4/eoC4nrBGL5KJVATzEDhLm8OQUigjlFNKYS+PAI9w6I2IwIj0mt/ziEpZbzITwmwfrwCIdRQs7IYZ8t/9kIAwYbG86IMB+B8FuKhCALueqIptqOlzuRoURxBc5NihlkqntYAgaIQFd5SyFMeaISpPCjz2SMIaCAG6ZfqpHwSEa5WVC72htFWUp0J3m/1MeMebEwJyFwoIzki/JB/5IPgr4PHzj9JR/4XHwYUzfOygfs8wEW5QOI0lEGjZDIhfBnmn6/REEkF1oJEEyjfEN4MAYVIjVCuJDY5YOUyjUrI6nQjnmTnc+Z6Yrf6+gwdMpUJWZL8YEZTpi+yAfBgWj9dj5ITZC2+BC8KDCKuL30lQ90OkZM/U7ndxnhk8b+q9PFIkSQ4Elz7TG9CjLF8Czlare62+bHIVX35hc28OUn&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <ellipse cx="140" cy="70" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="140" cy="230" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 147.07 222.93 L 202.93 167.07" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <ellipse cx="60" cy="100" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 60 110 L 60 180" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 130.63 73.48 L 69.36 96.49" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <ellipse cx="60" cy="190" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 18px; height: 1px; padding-top: 190px; margin-left: 51px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                x
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="60" y="194" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    x
+                </text>
+            </switch>
+        </g>
+        <path d="M 68.96 194.45 L 131.06 225.53" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <ellipse cx="210" cy="160" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 203.85 152.11 L 146.14 77.89" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/>
+        <ellipse cx="10" cy="60" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="140" cy="10" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="140" cy="275" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="10" cy="210" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="270" cy="180" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 52.17 93.77 L 17.81 66.25" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 140 20 L 140 60" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 140 265 L 140 240" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 50.72 193.71 L 19.28 206.29" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 260.5 176.86 L 219.49 163.16" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://desk.draw.io/support/solutions/articles/16000042487" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Viewer does not support full SVG 1.1
+            </text>
+        </a>
+    </switch>
+</svg>

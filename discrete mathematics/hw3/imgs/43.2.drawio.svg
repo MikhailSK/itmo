@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="351px" height="131px" viewBox="-0.5 -0.5 351 131" content="&lt;mxfile host=&quot;1325c96e-4f39-4136-a689-948a6eb66706&quot; modified=&quot;2020-09-19T14:35:38.167Z&quot; agent=&quot;5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) code-oss/1.49.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36&quot; etag=&quot;v9O1AVGJYC6v9neKWNO1&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Page-1&quot;&gt;5VhNj9sgEP01vkbYfBgfu9nN9lKpUg49I5vEqMRYmCROf33xGuKPpNo0ymbdJocIHjAw7zEzyAGcb+pXzcr8m8q4DCKQ1QF8DqKIgNj+N8ChBSjALbDWImuhsAOW4hd3IHDoVmS8Gkw0SkkjyiGYqqLgqRlgTGu1H05bKTnctWRrfgIsUyZP0R8iM7nzIoo7/CsX69zvHJKkHdkwP9l5UuUsU/seBF8CONdKmba1qedcNtx5Xtp1iz+MHg+meWEuWRC1C3ZMbp1v7lzm4J21CyyvtvO0z4Xhy5KlzcjeKmux3Gyk7YW2yaqyJXslam7tP62ElHMllbZYoYrGxEoVxkNBBBdvP4tXRquf/NzIqUfOyR3Xhtc9yHn4ytWGG32wU9woBI5td90i7Pr7TjzooLynm8eYuy7ro+WOUdtwpJ4nGD4CwTaiBwTDOxKMHoFgiD6PYHwBwUX2pUmrHUs9Uu3gQjTWn8F1NFVqq1M+yFeG6TX3PrYQzwY5+5TKHlX4DFUe01wyI3bDTH+OP7fDdyXseTul4EgpOpKg9cat6mfmsSE6MjTWsuXgxNCbnEe3L1KYTFxhNC2FER5Wk+RahUeGPlDh+H2F7UukbJoryWsn9VNP9VSyqhLpUPgrpJ6IiAiMowvN4vA6HVH8vq3bSRleEq3/fMHD6POebOEF0fIfMDyOgHsyTB+C4XEFvyfDyZRqus9Z/aLuo2wiBQGPk/i17zYS3e3d5neasMh0WiLTGz3dxoY+UmSfd6YhMp1+JONkhmgM4wSFACRkJDmlswQDCHBISESJP/xf3wAIZjZnUAJChKG9ScP7QMIZiCOKEgIJSWCIb3Q9bLf7ONhO776wwpff&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <ellipse cx="55" cy="15" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="15" cy="115" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="95" cy="115" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 49.49 28.95 L 20.57 101.07" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 60.51 28.95 L 89.43 101.07" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 140.5 89.71 L 140.5 79.71 L 190.5 79.71 L 190.5 69.21 L 209.5 84.71 L 190.5 100.21 L 190.5 89.71 Z" fill="none" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" pointer-events="all"/>
+        <ellipse cx="295" cy="15" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="255" cy="115" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="335" cy="115" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 289.49 28.95 L 260.57 101.07" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 300.51 28.95 L 329.43 101.07" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 320 115 L 270 115" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+</svg>

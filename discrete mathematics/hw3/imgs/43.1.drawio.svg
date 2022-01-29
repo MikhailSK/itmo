@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="281px" height="171px" viewBox="-0.5 -0.5 281 171" content="&lt;mxfile host=&quot;d7452e8b-fd46-4311-b833-08917da0840e&quot; modified=&quot;2020-09-19T14:35:26.946Z&quot; agent=&quot;5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) code-oss/1.49.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36&quot; etag=&quot;apQNOO_IJL-RPg-OXE7a&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Page-1&quot;&gt;5ZhPj6MgGMY/jdeNin+P28509jLJJD3smSitZKgYpK3dT784QBXs7BjTcU3aQwMP8Mr7/BRQB6wPzQuDVfFKc0Qc380bBzw5vh+5sfhvhYsUEjeUwp7hXEpeJ2zxH6REV6lHnKPa6MgpJRxXppjRskQZNzTIGD2b3XaUmFet4B4NhG0GyVD9jXNeqCz8uNN/Ibwv9JW9KJUtB6g7q0zqAub03JPAswPWjFIuS4dmjUjrnfZFjtt80nqdGEMlHzPAlwNOkBxVbmpe/KKTFQOEr6KyOheYo20Fs7blLMgKreAHImqeKMK6kmbvcINE/NUOE7KmhDKhlbRsQ+xoybXk+GDz8RN6zRl9R7dahhmpJE+IcdT0JJXhC6IHxNlFdFGtQLutbjc/VPVzBw8oqehx0xpUt8v+GrlzVBSUqbcNBo9o8LU+g8HBQxqczmdwOMLgMv/ZLqudSz1TReMGt9Gf3Gk21fTIMmSsVxyyPdI5Sgnlxpo9tLJnVXjDKq0xRCDHJ3Olv+WfusIbxWK+HSlgkUosBDIbNaq/MtuBEiuQzVJ6MAj0gfOa9ijC0ZIIgyHhYFmEg9DcTdKphK1A30g4/pqwOIlUbXFHUKNQr3rUMwLrGmcm+AmoFwIxcO2nK/gRe9M4BvHXse6HMnmE/S78jye29BENnvPEpt/iHszhGY9snjfC4dl29GS4o6eL2gzCe53ZwvnObN6YN/fZEKdDxPopXwrje53a7EDfyXjEu212ZKd23dNMZwKu6faJJ8sC7llHiMnAIytQMA64IAEvvW5V26H+fMKRfSRN3H/Oy+7vm/1FQc5g5N0nqt1nR9m9+3YLnv8C&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <ellipse cx="15" cy="15" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="15" cy="85" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="15" cy="155" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 15 30 L 15 70" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 15 100 L 15 140" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 80.5 89.71 L 80.5 79.71 L 130.5 79.71 L 130.5 69.21 L 149.5 84.71 L 130.5 100.21 L 130.5 89.71 Z" fill="none" stroke="#ffffff" stroke-linejoin="round" stroke-miterlimit="10" pointer-events="all"/>
+        <ellipse cx="215" cy="15" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="215" cy="85" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="215" cy="155" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 215 30 L 215 70" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 215 100 L 215 140" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 229 149.62 Q 280 130 280 80 Q 280 30 229.62 18.37" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+</svg>

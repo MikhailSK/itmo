@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="141px" height="151px" viewBox="-0.5 -0.5 141 151" content="&lt;mxfile host=&quot;9cceaf34-1c04-48fb-b425-cd93390d1d6e&quot; modified=&quot;2020-09-05T17:40:01.426Z&quot; agent=&quot;5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) code-oss/1.47.3 Chrome/78.0.3904.130 Electron/7.1.14 Safari/537.36&quot; etag=&quot;hhJ3fhDg0pJZwKI87qOI&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Page-1&quot;&gt;3VhNj5swEP013LFNkuXYzX70UqlSDm2PVnDAqsHIOAH662tiO2CTaBHabKLkEDHP47HnPQ8DBGidN+8Cl9kPnhAWwDBpAvQSQAjBQv13QKsB1FkdkAqaaAj0wIb+IwYMDbqnCakcR8k5k7R0wS0vCrKVDoaF4LXrtuPMXbXEKRkBmy1mY/QXTWSm0Se46vHvhKaZXRksYz2SY+tsMqkynPB6AKHXAK0F51Jf5c2asI47y4ue93Zh9LQxQQo5ZYLh/YDZ3uRm9iVbm6yaoHhVxnOdUUk2Jd52I7VSVmGZzJmygLrEVanJ3tGGqPjPlRT8L1lzxsUxFHo7/tTIjjJm8YIXXfDxzk0yByIkaQaQyeSd8JxI0SoXMxobUs2pAtaue40s79lAHothcyrSU+CeOHVhuDvPI3okHgFwiYSrryMyeiQiIbjdiVw+EpEgvt2JXE0gski+dW2lz3lA3mWuFB+i/W3cjsafofHSJR+erNZYF+ms+F5siaO+xCIllgsNkcTpbWPKB5QuzlBqMUEYlvTgdsRzPJsVfnKq9tuXhqdoFHlS6WzMrGEH8wKhyA2EYi+Q5mAU6Cj7Ke1JJ+HpaidhkqbRWFN0V5oC5FUpmqmpHwiBq2ka31ZTONY0ui9NodfClnM19evUvzd/nqbA9pfH6H0LT4Ho63ofmPJ+cMXyONPGrLh3Uh8w9O55fvuZWx+jQJ9YH1PeVq6oKrp/Vb0HdxTOVXXxQaDZqiqz/0yg3ftvLej1Pw==&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <ellipse cx="10" cy="60" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="30" cy="140" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="130" cy="60" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="110" cy="140" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 102.13 133.83 L 17.07 67.07" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 122.19 66.25 L 37.81 133.75" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 20 60 L 120 60" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <ellipse cx="70" cy="10" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 107.08 130.44 L 72.94 19.56" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 32.92 130.44 L 67.06 19.56" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+</svg>

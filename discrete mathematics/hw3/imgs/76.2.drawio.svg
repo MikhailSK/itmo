@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="161px" height="141px" viewBox="-0.5 -0.5 161 141" content="&lt;mxfile host=&quot;c3b8890e-381d-49b4-8b5b-8cd9dd6a61d9&quot; modified=&quot;2020-10-02T10:04:54.993Z&quot; agent=&quot;5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) code-oss/1.49.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36&quot; etag=&quot;Pt3fxWPoD-0Feg4wW9ni&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Page-1&quot;&gt;3VhNj5swEP01XJE/xjYcu2l2e6lUKYeereAEVIIjx/nqr69ZTMCQSlG0iVByiOB5/Ox5b2AsIjrbnD6M3OY/dabKiKDsFNHvESGcE/dfA+cGSBBrgLUpsgbCHbAo/ioPIo/ui0ztgkCrdWmLbQgudVWppQ0waYw+hmErXYarbuVajYDFUpZj9HeR2dxnQUSH/1DFOm9XxjxtRjayDfaZ7HKZ6WMPovOIzozWtrnanGaqrLVrdWnmvf9n9LIxoyp7ywRvxEGWe5+b35c9t8m6CU5Xd/N2zAurFlu5rEeOzlmH5XZTujvsLuVu24i9Kk7K8b+tirKc6VIbh1W6qil21ug/qgUjQt8/f25kvHOfzEEZq049yGfyofRGWXN2IX4UqN+9LysqPMWxM4l64fOePy0mfVmsL8ydcu7Ci3ddSPpKQlI+EBKeJyS8kpCjisTPE5K9kpAUDYRMnickfykhSSgkeeI7UtwgZJV9qxt0p0ZPvErPM9eHfTS+T6qd3pulCrqflWat2jwbSGXBCWAsZ08udkWuFjOqlLY4hOeGaxr6FX7pwu235xYK3IKhDU02fla/zw+JREhEkwFRo8GI6NPSS9o3uZxMzWU6dplPy2VgoTkU7nSZ0pimlKaJO4wShJOQlrOYI84RFlgIF/OoCkinVgFs6s85oEEFkLuf8wERfthz3jJPx2aYus00gZgijoCjFDlSEXrFeCw4EOApABHpgP7WEgAY9IwHlkB7/JhyCZCJlQCNScIEYlC/iRMeegUkhpRjLAhiCeH8zkYAiMdcpJC6dTgnKGwEgEQMCRIMADPEk/SL6sPddl8umvDu8w+d/wM=&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <ellipse cx="145" cy="115" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="75" cy="85" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="145" cy="55" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="15" cy="125" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="35" cy="15" rx="15" ry="15" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 131.21 109.09 L 88.79 90.91" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 67.56 71.98 L 42.44 28.02" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 27.52 116.74 L 62.52 93.32" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 131.21 60.91 L 88.79 79.09" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 145 70 L 145 100" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+</svg>

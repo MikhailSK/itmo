@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="311px" height="71px" viewBox="-0.5 -0.5 311 71" content="&lt;mxfile host=&quot;18b9af36-6450-46cc-94f3-1cfdfff7d36c&quot; modified=&quot;2020-09-10T12:17:03.158Z&quot; agent=&quot;5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) code-oss/1.47.3 Chrome/78.0.3904.130 Electron/7.1.14 Safari/537.36&quot; etag=&quot;TxrEE1TCUR2YuAD4y62I&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Page-1&quot;&gt;5VhNc9sgEP01vmpg+RA6Jm6SXjrTmRx6ZiQsMZWERyax3V9fiFAk/JF60trxNL4YHssuvH2ClWZk3mweOrmsvplC1TNAxWZGvswAcIqJ+/PItkcEYj1QdroIRiPwqH+pAKKAPulCrSJDa0xt9TIGc9O2KrcRJrvOrGOzhanjqEtZqj3gMZf1PvpDF7YKu4B0xL8qXVZDZMyzfqSRg3HYyaqShVlPIHI3I/POGNu3ms1c1Z68gZd+3v2R0deFdaq1p0yAfsKzrJ/C3sK67HbYrJvgeHWd23WlrXpcytyPrF1qHVbZpnY97JpytezJXuiNcv5vF7qu56Y2ncNa03oXK9uZn2oAZ0DuX35uZH/lYTPPqrNqM4HCTh6UaZTtts4kjEIaWA2yojz012OSBuKrSX4GTAZZlK+eR+ZcI5B3mEhyNUQuTGvPRTCJCWb4cgTTz0AwwR9HMDuB4La48cfnyNKE1OOEFXJVeZpfzI6ytDJPXa6ip8nKrlQ2yr8qoqN5n8kJU+wAUwPWqVpa/Rwf6IfoCxG+G+3WO0kUSbgATIEynGHC4rRRlKQIWIYIEhkWLHbf7zR4nB7Ou0GAJyA4yggQTlkWx0CZG6Qp5xkSggGPY/TU7cV4EcErWyfpgp9NF++VAlyVFMAlG6FRCjSN80RwQuGvtQAMEo6OasEv4QJaOOmaO6MY6LWLgYBIEKaEYEwgZSJOE6RJ5jJEKQaRAcneeSxwSDLngAAWYk9vNE0TlGLEU4Gx4IyeSwsU/VkL08wPlS6a3gi+I2tdtq6du8wrJ4tbf19qV23fhIFGF0Wteh9L77nZlP7FIulreej/vVvPAUo49W3PFrhO6jqtsXkVwl26KiV8pypN9+90fkCR5F8UTddT35+xaqL0A8vST1H4M/hAhk+p/C9VmA4PVFSZkqu6ghhcoDRl5BpKU3q+d5b/RQ2UXaI6pYLu3HHipJy7zMjtxGzpDVZv7Gb3C49Ab66L4TftXaNfwYkCdN3x01xvPn7gJHe/AQ==&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <ellipse cx="50" cy="10" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="10" cy="60" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="90" cy="60" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 20 60 L 80 60" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/>
+        <path d="M 16.18 52.14 L 43.75 17.81" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 83.82 52.14 L 56.25 17.81" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 130 19.6 L 169.33 19.6 L 169.33 10 L 190 25 L 169.33 40 L 169.33 30.4 L 130 30.4 L 130 25 Z" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="all"/>
+        <ellipse cx="220" cy="60" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="300" cy="60" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 230 60 L 290 60" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/>
+        <path d="M 224.47 51.06 L 235.53 28.94 Q 240 20 250 20 L 270 20 Q 280 20 284.47 28.94 L 295.53 51.06" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+</svg>

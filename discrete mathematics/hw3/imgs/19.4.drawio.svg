@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="171px" height="181px" viewBox="-0.5 -0.5 171 181" content="&lt;mxfile host=&quot;15fa8c37-ad77-41a5-b626-01f5bfd2a856&quot; modified=&quot;2020-09-10T12:59:27.405Z&quot; agent=&quot;5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) code-oss/1.47.3 Chrome/78.0.3904.130 Electron/7.1.14 Safari/537.36&quot; etag=&quot;Wj4bgOwGln8MABiauzPf&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Page-1&quot;&gt;5Vhdb5swFP01eUW2rz8f16ztXiZN6sOeUXADGsERcZt0v36mtguGREq75mNaHgg+vtj4nHsuhhnMV7v7Nl+X302h6xlBxW4GX2eEUAB37IAXDwAnHli2VeEh3AMP1W8dQBTQp6rQmyTQGlPbap2CC9M0emETLG9bs03DHk2dzrrOl3oCPCzyeor+rApbelQS0ePfdLUs48yYK9+zymNwWMmmzAuzHUBwO4N5a4z1Z6vdXNcdd5EXf93dgd63G2t1Y4+5IPD+nNdPYW3hvuxLXKy7wPHqGjfbsrL6YZ0vup6tU9ZhpV3VroXdab5Ze7Ifq5124988VnU9N7VpHdaYphtiY1vzS0dwRuDu9dcFm8buw6crCot81q3VuwEUVnivzUrb9sWFhF7CAtsx3URob3vxoiDlQLeI5SFdlm8j94y6k0DqfoLhfySYwfkI5kcQ3BRfOtf3LA1IPUzYQWI25qld6ERfm7dLHaIk9ZgukioyZW/ADtvDTsRaXee2ek5rzz7Kwgw/TOVuuBeHogwhgimhDCsMVIy0whl1fwoBkgpLlo7v1xqGHBaS0SwAaQpQOdLWMzQZ6FXeN06OUpweI/k/7yksRoSi83kqpsilTBUVHrpKiOtyFWeZZFIBwVI6U7HRE2Zv73tN5fYNmeSgQBGQQBijaUpgmQHjCCNMuKJM8JNZTl42Icg0H2KOXEk+ACWZIr3ikyqbdn+0yiKRIYERFxJjyRmDNCHU/u7PTwgxrRC7SxXhExRbRs5XbIW6rLeilENzwZV5y5VBxKTLa8YVUmRkLZwp7t6xMDAMEosPWkuizO1+/ECSCjyaRGZIOocxRQUDoKcyVtw8XsHm5hN8BWS0ieHn81XcyZ7AV0W+KTs+X8OOMlmUdWgyclUmG7/DUTbS4Phn1IGN61+bxTX7LyM+vP+8BLd/AA==&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <ellipse cx="90" cy="10" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="90" cy="170" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 97.07 162.93 L 152.93 107.07" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <ellipse cx="10" cy="40" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 10 50 L 10 150" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 80.63 13.5 L 19.37 36.52" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <ellipse cx="10" cy="160" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 18px; height: 1px; padding-top: 160px; margin-left: 1px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                x
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="10" y="164" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    x
+                </text>
+            </switch>
+        </g>
+        <path d="M 19.93 161.22 L 80.07 168.79" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <ellipse cx="160" cy="100" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 153.87 92.1 L 96.14 17.9" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://desk.draw.io/support/solutions/articles/16000042487" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Viewer does not support full SVG 1.1
+            </text>
+        </a>
+    </switch>
+</svg>

@@ -1,0 +1,101 @@
+\input{preamble.sty}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\begin{document}
+
+\section*{Условие}
+
+Рассмотрим случайное блуждание точки на прямой, пусть точка начинает в точке $0$ и каждую секунду переходит равновероятно на $1$ влево или вправо. Докажите, что математическое ожидание максимума координаты точки за $n$ шагов есть $O(\sqrt n)$.
+
+\subsubsection*{Формализация условия}
+
+$\xi_i:=\pm 1, \mathbb P(\xi_i=1)=\mathbb P(\xi_i=-1)=0.5$ --- один шаг \textit{(он происходит раз в секунду)}.
+
+$X_n$ --- координата спустя $n$ шагов:
+$$X_n:=\sum_{i=1}^n \xi_i$$
+$M_n$ --- максимум координаты спустя $n$ шагов:
+$$M_n:=\max_{i\in[1, n]} X_i$$
+Доказать: $\mathbb E (M_n)=\mathcal O(\sqrt n)$
+
+\section*{Решение}
+
+\begin{statement}
+    $\mathbb P(M_n \geq a) = \mathbb P(X_n \geq a) + \mathbb P(X_n > a)$
+\end{statement}
+\begin{proof}
+    Заметим, что система событий $\{X_n \geq a, X_n < a\}$ --- полная. Тогда по формуле полной вероятности:
+    $$\mathbb P(M_n \geq a) = \mathbb P(M_n \geq a | X_n \geq a) \mathbb P(X_n \geq a) + \mathbb P(M_n \geq a | X_n < a) \mathbb P(X_n < a)$$
+    $$(X_n \geq a \Rightarrow M_n \geq a) \Rightarrow \mathbb P(M_n \geq a | X_n \geq a)=1$$
+    $$\mathbb P(M_n \geq a | X_n < a) \mathbb P(X_n < a)\stackrel{def}=\frac{\mathbb P(M_n \geq a \cap X_n < a)}{\mathbb P(X_n < a)}\mathbb P(X_n < a)=\mathbb P(M_n \geq a \cap X_n < a)$$
+    Итого:
+    $$\mathbb P(M_n \geq a) = \mathbb P(X_n \geq a) + \mathbb P(M_n \geq a \cap X_n < a)$$
+    % Рассмотрим $M_n \geq a \cap X_n \leq a$. Заметим, что $M_n \geq a \Rightarrow \exists \tilde N\in[1, n] : X_N=a$, т.к. для достижения максимума $>a$ необходимо достичь $a$.
+
+    Обозначим за $N$ первую секунду, такую что $X_N=a$:
+    $$N:=\argmin_{i\in[1,\infty)}(x_i=a)$$
+    $N$ существует с вероятностью $1$.
+
+    Построим по последовательности шагов $\{\xi_i\}_{i=1}^n$ последовательность $\{\tilde \xi_i\}_{i=1}^n$, такую что:
+    $$\tilde \xi_i=\begin{cases}
+        \xi_i ,& i\leq N \\
+        -\xi_i ,& i>N
+    \end{cases}$$
+    По построению $\{\tilde \xi_i\}$ совпадает с $\{\xi_i\}$ с начала и до точки $N$, после которой она зеркально отражена относительно оси $x$.
+    
+    Сопоставим $\{\tilde \xi_i\}$ последовательность префиксных сумм $\{\tilde X_i\}$ \textit{(аналогично $\{X_i\}$)}. $\{\tilde X_i\}$ совпадает с $\{X_i\}$ с начала и до точки $N$, после которой она зеркально отражена относительно горизонтальной прямой $y=a$.
+
+    \clearpage
+
+    \begin{figure}
+        \includegraphics[scale=0.5]{imgs/wienerxd.png}
+        \centering
+        \caption{Пример \(X\) и $\tilde X$: $a=50, N\approx 2800$}
+    \end{figure}
+
+    \begin{statement}
+        $$M_n \geq a \cap X_n < a \Leftrightarrow \tilde X_n > a$$
+    \end{statement}
+    \begin{proof}
+        \begin{enumerate}
+            \item Докажем ``$\Rightarrow$''
+    
+            $M_n\geq a \Rightarrow N \leq n$, иначе $a$ еще не было достигнуто.
+    
+            $X_n < a \Rightarrow N\not=n$, иначе противоречие с определением $N$ ($X_N=a$)
+    
+            Итого, $N < n \Rightarrow a-X_n=\tilde X_n - a$ \textit{(симметрия относительно $a$)}.
+            $$X_n<a \Rightarrow a-X_n>0 \Rightarrow \tilde X_n - a > 0 \Rightarrow \tilde X_n > a$$
+
+            \item Докажем ``$\Leftarrow$''
+            
+            $\tilde X_n > a \Rightarrow N < n$, т.к. $a$ было впервые достигнуто раньше.
+
+            $N < n \Rightarrow M_n\geq a$ по тому же самому утверждению.
+
+            Аналогично пункту c ``$\Rightarrow$'' доказывается $X_n < a$.
+        \end{enumerate}
+    \end{proof}
+
+    Т.к. $M_n \geq a \cap X_n < a \Leftrightarrow \tilde X_n > a$, $\mathbb P(M_n \geq a \cap X_n < a)=\mathbb P(\tilde X_n > a)$.
+
+    $\mathbb P(\tilde X_n > a)=\mathbb P(X_n > a)$, т.к. $\xi_i$ равновероятно распределены.
+
+    Итого, $\mathbb P(M_n \geq a) = \mathbb P(X_n \geq a) + \mathbb P(M_n \geq a \cap X_n < a)=\mathbb P(X_n \geq a) + \mathbb P(X_n > a)$
+\end{proof}
+
+$$\mathbb E(M_n)=\sum_{i=1}^n P(M_n \geq i)=\sum_{i=1}^n \mathbb P(X_n \geq i) + \mathbb P(X_n > i)=\sum_{i=1}^n 2\mathbb P(X_n > i) + \mathbb P(X_n = i)$$
+
+Заметим, что
+$$\mathbb P(|X_n| > i)=\mathbb P(X_n > i)+\mathbb P(-X_n > i)$$
+По симметрии блуждания точки:
+$$\mathbb P(X_n > i)=\mathbb P(-X_n > i) \Rightarrow$$
+$$\Rightarrow \mathbb P(|X_n| > i)=2\mathbb P(X_n > i)$$
+Аналогичное утверждение верно для равенства:
+$$\mathbb P(|X_n| = i)=2\mathbb P(X_n = i)$$
+Подставим в $\mathbb E(M_n)$:
+$$\mathbb E(M_n)=\sum_{i=1}^n \mathbb P(|X_n| > i) + \mathbb P(X_n = i)=\mathbb E(|X_n|)+\sum_{i=1}^n 0.5\mathbb P(|X_n| = i)\leq$$
+$$\leq \mathbb E(|X_n|) + 0.5\sum_{i=1}^n i\mathbb P(|X_n| = i)=1.5\mathbb E(|X_n|)=\mathcal O(\sqrt n)$$
+Последний переход доказан в предыдущем задании.
+
+\end{document}

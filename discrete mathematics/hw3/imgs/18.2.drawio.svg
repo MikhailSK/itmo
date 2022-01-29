@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="311px" height="101px" viewBox="-0.5 -0.5 311 101" content="&lt;mxfile host=&quot;17b2668e-ad83-416d-8f87-c06b8050f2e3&quot; modified=&quot;2020-09-06T12:49:05.684Z&quot; agent=&quot;5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) code-oss/1.47.3 Chrome/78.0.3904.130 Electron/7.1.14 Safari/537.36&quot; etag=&quot;V1stVrwGkEof8A0ptHHL&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Page-1&quot;&gt;3VrLjtowFP0atpHfsZfz7qZSJRZtlxExJGqIUfAM0K+vPbHzgqkihkkCLMC+Tm7sc47t6xtm+GG9fymiTfJdxTKbIRDvZ/hxhhDF3Hxbw6E0cEBLw6pI49IEa8M8/SudETjraxrLbetCrVSm003buFB5Lhe6ZYuKQu3aly1V1n7qJlrJI8N8EWXH1p9prBM3ChTW9m8yXSX+yZCJsmUd+YvdSLZJFKtdw4SfZvihUEqXpfX+QWYWO49Led/zB61VxwqZ6z43UAf8W5S9usG5jumDH625wwBrKve7JNVyvokWtmVnqDW2RK8zU4OmGG03JdrLdC/NA+6XaZY9qEwVxpar3LrY6kL9kd44Q/j5/WNajrvuRvMmCy33DZMbyotUa6mLg7nEtSLsYHW6IsLVdzVLHvmkQZC3RU4Xq8pzDZ0pOPQ+QJLdFJK0jSTFAyIZ3hKSGHWQBAMiyW8Jya4mCR0QSXFTSIrxZjcDPZDM4zu7TddwNNA7A5mtei0Wsr3j6ahYSd2eJzJu7fvH+DXwoSfw8bZCZpFO39rRwinQ3BN+qNT0uKaHdYTOO7iX43F3NXf3jiMMO45wx1EJwpGjdw6rYfej1YtwLFrFCVrDadHqZVZFJ/w8Wk2k+X99XJBWPDKt7AStYlK0YogDxhEkZkOCAmLaXloJCEJg+gww4AJyeuZMRixAnAGBEWbEI1CFFMI0kpAxATiniH2ZGsgE1UAnpQZk+AagVgMJ21RhGBD0aTkgigIGPpSD7cIAcgh7hJdN8v1ZF5hKHG0TG/u8V6IsXeWmvDDkS6OMexvKpOa8feca1mkcZ7L0sbGe1/uVzSwE5Wkelb/WrcXAzDhmyxYsKEwpV3qRuGcNHv93N/MTZ9JTeiQXiLX40FHrUuV67nyTr0aWjHjaF32i2OtFdsTTv+gTSF4tsnTEbIBAt4xsV7NDZgdEnyj5epEdMVsgPhtxXgCpZgTqoWhGoH5eTSQCJZfKHtDhsgeiz2uIIWnGxzTzaR07yaWyCWS4bILo845k7NmMJ0UzHSK7QCeRXRB93vuMrI6pLQKDZBvIJLINos/LrCN5VHkG2NaK3Kf6V6P8e2bzBtTVHu3Iga8cXOXS+kInVh84LX11Qj8SnhtLkI6jbnB4OZ1Af6S6aqFMRAAo7PDGzhQARijAMAx5iAABkPt1olpFcEAFh5QBgDHhhHydPPocg8cOQqalgiok9GzRM1XQdVStL5/m2VTrf02Vl9d/PcNP/wA=&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <ellipse cx="10" cy="50" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="30" cy="90" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="100" cy="60" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="30" cy="10" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="70" cy="90" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 14.36 41 L 25.53 18.94" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 77.07 82.93 L 92.93 67.07" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 40 90 L 60 90" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 25.64 81 L 14.47 58.94" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 130 55.2 L 161 55.2 L 161 40 L 180 60 L 161 80 L 161 64.8 L 130 64.8 L 130 60 Z" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="all"/>
+        <ellipse cx="210" cy="50" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="230" cy="90" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="300" cy="60" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="230" cy="10" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="270" cy="90" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 230 80 L 230 20" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 261.68 84.45 L 218.32 55.55" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 240 90 L 260 90" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 225.64 81 L 214.47 58.94" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 240 10 L 292.32 53.6" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/>
+        <path d="M 40 10 L 92.32 53.6" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/>
+        <path d="M 239.18 86.02 L 290.81 63.94" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+</svg>

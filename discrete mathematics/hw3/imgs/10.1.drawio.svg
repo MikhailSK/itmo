@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="101px" height="101px" viewBox="-0.5 -0.5 101 101" content="&lt;mxfile host=&quot;7b28da80-0a4d-4519-a95a-6827083406bc&quot; modified=&quot;2020-09-05T17:26:40.692Z&quot; agent=&quot;5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) code-oss/1.47.3 Chrome/78.0.3904.130 Electron/7.1.14 Safari/537.36&quot; etag=&quot;qwO8WIy3yWKo0FUJc-IA&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Page-1&quot;&gt;3VdNj4IwEP013IGyKMfV1d3LJpt42HMDIzRbKClVcH/9FtvyUTQxJqtGD6Z9nZnOvDdt1UHLvHnnuMw+WQLU8d2kcdCb4/uhG8jvFjgoYO6+KCDlJFGQ1wMb8gsadDW6IwlUI0PBGBWkHIMxKwqIxQjDnLN6bLZldLxriVOYAJsY0yn6TRKR6Sr8WY9/AEkzs7MXRmolx8ZYV1JlOGH1AEIrBy05Y0KN8mYJtOXO8KL81mdWu8Q4FOISB1857DHd6dp0XuJgipUOklc5WdQZEbApcdyu1FJZiWUip3LmySGuSkX2ljQg4y8qwdkPLBll/BgKrY8fubIllBq8YEUbXCcCXEBzthivo0i2FrAcBD9IE+Ng+kO3lRfped2LZIjPBvoYDOu2SLvIPXNyoMk7TSR6ZiL92e2IDJ6KyOh+HRk+M5G37MjZBUQWyWv7rvQ1D8g7z5WKA8nktbFokXuxHY9hdGcLzFMQg9tnSt6AnJcT5BiMA8WC7MdJnGJM7/DFiEyv08a3tAkCi3SVvPYaPkZWIBSMA6HICqRKngQ6CtiVfZGm88fXNLynph6yzhu6UlM7EPL+TdPo8TUN7qqpdbz8a8+pHQjZt+zVmspp/9tXmfd/INDqDw==&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <ellipse cx="10" cy="10" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="10" cy="90" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="90" cy="10" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <ellipse cx="90" cy="90" rx="10" ry="10" fill="none" stroke="#ffffff" pointer-events="all"/>
+        <path d="M 10 20 L 10 80" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 17.07 17.07 L 82.93 82.93" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 20 10 L 80 10" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+</svg>

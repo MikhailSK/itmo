@@ -1,0 +1,236 @@
+\input{preamble.sty}
+
+\begin{document}
+
+\setcounter{section}{66}
+
+\section{}
+Обозначим как $W$ множество всех слов над алфавитом $\{a, b\}$. Объясните равенство $W=Seq\{a\}\times Seq(\{b\}\times Seq\{a\})$. Проверьте равенство производящих функций.
+
+Заметим, что \(Seq(a) = a^*\). Тогда \(Seq\{a\}\times Seq(\{b\}\times Seq\{a\}) = a^* (ba^*)\). Несложно заметить, что искомое верно.
+
+\[
+    Seq\{a\}\times Seq(\{b\}\times Seq\{a\}) \leftrightarrow \frac{1}{1 - t} \frac{1}{1 - \frac{t}{1 - t}} = \frac{1}{1 - 2t} \leftrightarrow a_n = 2^n
+\]
+
+\section{}
+Обозначим как $W^{e}$ множество слов над алфавитом $\{a, b\}$, где все отрезки подряд идущих букв $a$ имеют четную длину. Представьте $W^{e}$ как конструируемый комбинаторный объект. Найдите производящую функцию для $W^{e}$.
+
+\begin{align*}
+    Seq \{b\} \times Seq(\{aa\} \times Seq \{b\}) & \leftrightarrow \frac{1}{1 - t}\frac{1}{1 - t^2 \frac{1}{1 - t}} \\
+                                                  & = \frac{1}{1 - t - t^2}                                          \\
+\end{align*}
+
+\section{}
+Обозначим как $W^{(k)}$ множество слов над алфавитом $\{a, b\}$, не содержащих $k$ букв $a$ подряд. Представьте $W^{(k)}$ как конструируемый комбинаторный объект. Найдите производящую функцию для $W^{(k)}$.
+
+\begin{align*}
+    Seq \{b\} \times Seq(\{a\} \times Seq_{ < k - 1} \{a\} \times \{a\} \times Seq \{b\} ) & \leftrightarrow \frac{1}{1 - t} \frac{1}{1 - t^2 \frac{1 - t^{k - 1}}{1 - t} \frac{1}{1 - t}} \\
+                                                                                           & = \frac{1 - t}{1 + t^2 - 2t - t^2 + t^{k + 1}}                                                \\
+                                                                                           & = \frac{1 - t}{1 - 2t + t^{k + 1}}
+\end{align*}
+
+\section{}
+Постройте производящую функцию для строк над алфавитом $\{a, b\}$, содержащих заданную строку $s$ длины $k$ как подпоследовательность. Сделайте вывод об асимптотическом количестве таких строк.
+
+
+\[Seq(\{a,b\} \setminus s_1) \times s_1 \times Seq(\{a,b\} \setminus s_2) \times s_2 \dots Seq(\{a,b\} \setminus s_n) \times s_n \times Seq(\{a, b\})\]
+\[\left( \frac{t}{1 - t} \right)^k \cdot \frac{1}{1 - 2t}\]
+Асимптотически \(\frac{t}{1 - t} \sim 1\), поэтому \(A \sim \frac{1}{1 - 2t}\), т.е. количество строк \(\sim 2^n\), т.е. асимптотически все строки содержат любую подпоследовательность.
+
+% \[
+%     Seq\{a\}\times (Seq(\{b\}\times Seq\{a\}) \setminus s) \times s \times (Seq(\{b\}\times Seq\{a\}) \setminus s)
+% \]
+
+% \begin{align*}
+%     \frac{1}{1 - t} \left(\frac{1}{1 - \frac{t}{1 - t}} - t^k\right) t^k \left(\frac{1}{1 - \frac{t}{1 - t}} - t^k\right) & = \frac{1}{1 - t} \left( \frac{1 - t - t^k(1 - 2t)}{1 - 2t} \right)^2 t^k
+% \end{align*}
+
+% \[a_n \sim n \cdot 2^n\]
+
+\section{}
+Постройте производящую функцию для строк над алфавитом $\{a, b\}$, в которых нет более $k$ подряд идущих букв $a$ или $b$.
+
+\[Seq_{ < k} \{b\} \times Seq(Seq_{1 \leq, < k} \{a\} \times Seq_{1 \leq, < k} \{b\}) \times Seq_{ < k} \{a\} \]
+\begin{align*}
+    \frac{1 - t^k}{1 - t} \frac{1}{1 - \left(\frac{t(1 - t^{k - 1})}{1 - t}\right)^2} & = \frac{(1 - t^k)(1 - t)}{(1 - t)^2 - (t - t^k)^2} \\
+                                                                                      & = \frac{(1 - t^k)(1 - t)}{(1 - t^k)(1 - 2t + t^k)} \\
+                                                                                      & = \frac{1 - t}{1 - 2t + t^k}                       \\
+\end{align*}
+
+\section{}
+На лекции мы доказали, что если язык регулярный, то производящая функция его слов является рациональной. Докажите или опровергните обратное утверждение: если производящая функция слов языка является рациональной, то язык регулярный.
+
+% Из задачи 121 второго семестра мы знаем, что язык полиндромов над алфавитом мощности \( > 1\) нерегулярен. Найдём производящую функцию для языка палиндромов над алфавитом \(\{a,b \}\).
+
+% \[A_n = \begin{cases}
+%         Seq_{n / 2}(2t),       & n\equiv 0\mod 2  \\
+%         Seq_{(n + 1) / 2}(2t), & n\equiv 1 \mod 2
+%     \end{cases}\]
+
+% \begin{align*}
+%     A & = \sum_{n = 0}^{+\infty} A_n                                                \\
+%       & = \sum_{n = 0}^{+\infty} A_{2n} + \sum_{n = 0}^{+\infty} A_{2n + 1}         \\
+%       & = \sum_{n = 0}^{+\infty} Seq_n(2t) + \sum_{n = 0}^{+\infty} Seq_{n + 1}(2t) \\
+%       & = \sum_{n = 0}^{+\infty} (2t)^n + \sum_{n = 0}^{+\infty} (2t)^{n + 1}       \\
+%       & = \sum_{n = 0}^{+\infty} (2t)^n + \sum_{n = 0}^{+\infty} (2t)^{n + 1}       \\
+% \end{align*}
+
+\section{}
+Постройте производящую функцию для строк над алфавитом $\{0, 1\}$, в которых число нулей делится на 3.
+
+Построим ДКА:
+\begin{figure}[h]
+    \includegraphics[scale=0.7]{images/73.pdf}
+\end{figure}
+
+\[D = \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \end{pmatrix} \quad \vec{u} = \begin{pmatrix} 1 & 0 & 0 \end{pmatrix} \quad \vec{v} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}\]
+
+\begin{align*}
+    L(t) & = \vec{u}(I - tD)^{ - 1}\vec{v}                                                                                                     \\
+         & = \begin{pmatrix} 1 & 0 & 0 \end{pmatrix} \left( \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} - t  \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \end{pmatrix}\right)^{ 1} \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} \\
+         & = \begin{pmatrix} 1 & 0 & 0 \end{pmatrix} \begin{pmatrix} 1 - t & - t & 0 \\ 0 & 1 - t & - t \\ - t & 0 & 1 - t \end{pmatrix}^{ - 1} \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}                                           \\
+         & = \frac{1}{2 t^3 - 3 t^2 + 3 t - 1} \begin{pmatrix} 1 & 0 & 0 \end{pmatrix}
+    \begin{pmatrix} -t^2 + 2 t - 1 & t^2 - t        & - t^2          \\
+                -t^2           & -t^2 + 2 t - 1 & t^2 - t        \\
+                t^2 - t        & -t^2           & -t^2 + 2 t - 1\end{pmatrix}  \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}                                                                                     \\
+         & = \frac{1}{2 t^3 - 3 t^2 + 3 t - 1} \begin{pmatrix} - t^2 + 2t - 1 & t^2 - t & - t^2 \end{pmatrix}
+    \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}                                                                                                                 \\
+         & = \frac{- t^2 + 2t - 1}{2 t^3 - 3 t^2 + 3 t - 1}                                                                                    \\
+\end{align*}
+
+\section{}
+Постройте производящую функцию для строк над алфавитом $\{0, 1\}$, задающие числа в двоичной системе счисления, которые делятся на 3.
+
+Построим ДКА:
+\begin{figure}[h]
+    \includegraphics[scale=0.7]{images/74.pdf}
+\end{figure}
+
+\[D = \begin{pmatrix}
+        1 & 1 & 0 \\
+        1 & 0 & 1 \\
+        0 & 1 & 1
+    \end{pmatrix} \]
+
+\begin{align*}
+    (I - tD)^{ - 1} & = \left( \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} - t \begin{pmatrix}
+        1 & 1 & 0 \\
+        1 & 0 & 1 \\
+        0 & 1 & 1
+    \end{pmatrix} \right)^{ - 1} \\
+                    & = \begin{pmatrix} 1 - t & - t & 0 \\ - t & 1 & - t \\ 0 & - 1 & 1 - t \end{pmatrix}^{ - 1}                                               \\
+                    & = \frac{1}{t^2 + 2 t - 1} \begin{pmatrix}
+        (1 - 2 t)/(t - 1) & -t    & t^2/(t - 1)            \\
+        -t                & t - 1 & -t                     \\
+        t/(t - 1)         & -1    & (-t^2 - t + 1)/(t - 1)
+    \end{pmatrix}
+\end{align*}
+
+\[\vec{u} (I - tD)^{ - 1} \vec{v} = \frac{1 - 2t}{(t - 1)(t^2 + 2t - 1)}\]
+
+\section{}
+Постройте производящую функцию для строк над алфавитом $\{a, b\}$, удовлетворяющих регулярному выражению $(ab|a)^* | (ab|b)^*$
+
+Построим ДКА:
+\begin{figure}[h]
+    \includegraphics[scale=0.7]{images/75.pdf}
+\end{figure}
+
+\[D = \begin{pmatrix}
+        0 & 1 & 1 & 0 & 0 & 0 \\
+        1 & 0 & 0 & 1 & 0 & 0 \\
+        0 & 0 & 1 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1 & 0 & 1 \\
+        0 & 0 & 1 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 1 & 0 & 0
+    \end{pmatrix}\]
+
+\section{}
+Найдите производящую функцию для строк, содержащих заданный паттерн $p$ как подстроку.
+
+\(a_n\) = число всех строк - число строк, не содержащих \(p\)
+
+\begin{align*}
+    a_n & = b_n - d_n                                          \\
+        & = m^n - d_n                                          \\
+    A   & = \frac{1}{1 - mt} - \frac{c(t)}{t^k + (1 - mt)c(t)} \\
+        & = \frac{t^k}{(1 - mt)(t^k + (1 - mt)c(t))}
+\end{align*}
+
+\section{}
+Рассмотрим бесконечную случайную строку из $0$ и $1$. Докажите, что матожидание позиции первого вхождения строки $p$ длины $k$ равно $2^k c(\frac 12)$, где $c(z)$ - автокорреляционный многочлен. Указание: можно использовать формулу $\mathbb E X = \sum\limits_{n=0}^{\infty} P(X > n)$.
+
+\begin{align*}
+    \mathbb E X & = \sum_{n=0}^\infty P(X > n)                                             \\
+                & = \sum_{n=0}^\infty \frac{f(n - k)}{m^{n - k}}                           \\
+                & = \sum_{n= k}^\infty \frac{f(n - k)}{m^{n - k}}                          \\
+                & = \sum_{n= k}^\infty f(n - k)\cdot t^{n - k}                             \\
+                & = \sum_{n= k}^\infty f(n - k)\cdot t^{n - k} \Big|_{t = \frac{1}{m}}     \\
+                & = F\left( \frac{1}{m} \right)                                            \\
+                & = F\left( \frac{1}{m} \right)                                            \\
+                & = \frac{c\left( \frac{1}{m} \right)}{\frac{1}{m^k} + (1 - 1)\cdot \dots} \\
+                & = m^k c\left( \frac{1}{m} \right)                                        \\
+                & = 2^k c\left( \frac{1}{2} \right)                                        \\
+\end{align*}
+
+\section{}
+Обозначим как $P^T$ множество разбиений на слагаемые, где порядок слагаемых не важен, а слагаемые выбраны из множества $T$. Осознайте, что $P^T = MSet(Seq_T(Z))$. Найдите производящую функцию для $P^T$.
+
+Осознание очевидно, т.к. \(Seq_T(Z)\) есть множество объектов с весами объектов множества \(T\). Мы можем брать \( > 1\) объект, поэтому \(MSet\)
+
+% \begin{align*}
+%     Seq_T(Z)       & = \sum_{t\in T} Seq_t(Z)                                                              \\
+%                    & = \sum_{t\in T} \frac{1}{(1 - z)^t}                                                   \\
+%     A_n            & = \sum_{t\in T} \binom{t - n - 1}{n}                                                  \\
+%     MSet(Seq_T(Z)) & = \prod_{n \geq 1}^{+\infty} \frac{1}{(1 - z^n)^{\sum_{t\in T} \binom{t - n - 1}{n}}} \\
+%                    & = \exp \left( \sum_{k \geq 1} \frac{\sum_{t\in T} \frac{1}{(1 - z^k)^t}}{k}  \right)
+% \end{align*}
+
+$$Seq_T(Z) \leftrightarrow i\in T$$
+
+$$[n]Seq_T(Z) = \begin{cases}
+        0, & n\not\in T \\
+        1, & n\in T
+    \end{cases}$$
+
+\begin{align*}
+    MSet(Seq_T(Z)) & = \prod_{n \geq 1}^{+\infty} \frac{1}{(1 - z^n)^{[n]Seq_T(Z)}} \\
+                   & = \prod_{n\in T} \frac{1}{1 - z^n}
+\end{align*}
+
+\section{}
+Постройте производящие функции для разбиений на различные слагаемые и на нечетные слагаемые. Покажите, что они совпадают.
+
+\begin{align*}
+    MSet(\Z /_2) & = \prod_{n = 1}^{+\infty} \frac{1}{1 - z^{2n - 1}}           \\
+    PSet(Z)      & = \prod_{n = 1}^{+\infty} (1 + z^n)                          \\
+                 & = \prod_{n = 1}^{+\infty} \frac{(1 + z^n)(1 - z^n)}{1 - z^n} \\
+                 & = \prod_{n = 1}^{+\infty} \frac{1 - z^{2n}}{1 - z^n}         \\
+                 & = \prod_{n = 1}^{+\infty} \frac{1}{1 - z^{2n - 1}}           \\
+\end{align*}
+
+\section{}
+Постройте производящую функцию для разбиений на не больше, чем $k$ положительных слагаемых.
+
+Будем искать число разбиений на слагаемые из \([1, k]\cap \Z\). Заметим, что это то же самое, т.к. если взять \(m\) раз слагаемое \(n\), то к сумме добавится \(m\cdot n\). Если взять \(n\) раз слагаемое \(m\), то произошло то же самое.
+
+Итого получилась задача 78 для \(T = [1, k]\cap \Z\). Ответ \(\prod_{n = 1}^{k} \frac{1}{1 - z^n}\)
+
+\pagebreak
+
+\section{}
+Индекс Хирша. Докажите, что $\prod\limits_{n=1}^\infty\frac{1}{1-z^n}=\sum\limits_{n\ge 1}\frac{z^{n^2}}{((1-z)\cdots(1-z^n))^2}$.
+
+\begin{align*}
+    \prod_{n=1}^\infty\frac{1}{1-z^n} & \stackrel{?}{=} \sum_{n\ge 1}\frac{z^{n^2}}{((1-z)\cdots(1-z^n))^2}        \\
+                                      & = \sum_{n \geq 1} \left(\prod_{m = 1}^n \frac{1}{1 - z^m}\right)^2 z^{n^2}
+\end{align*}
+
+\begin{figure}[h]
+    \centering
+    \includesvg{images/81.svg}
+    \caption{Геометрическое обоснование искомой формулы}
+\end{figure}
+
+\end{document}
