@@ -1,17 +1,43 @@
-Archive of various things I did at ITMO University. Large assignments are in separate repos, linked from this readme. See also [my general notes](https://github.com/Jovvik/M3137year2019)
+Archive of various things I did at ITMO University. Large assignments are in separate repos, linked from this readme. See also [my notes](https://github.com/Jovvik/M3137year2019).
 
 # Term 5
 
+## Data analysis
+
+### Labs
+
+- [1.1](data%20analysis/1.1.ipynb)
+- [1.2](data%20analysis/1.2.ipynb)
+- [1.3](data%20analysis/1.3.ipynb)
+- [3](data%20analysis/3.ipynb)
+- [4](data%20analysis/4.ipynb)
+- [5](data%20analysis/5.ipynb)
+- [6.1](data%20analysis/6.1.ipynb)
+- [6.2](data%20analysis/6.2.ipynb)
+- [7](data%20analysis/7.ipynb)
+- [8](data%20analysis/8.ipynb)
+- [vk cup](data%20analysis/vk.ipynb)
+
 ## Translation methods
 
-- [Lab 1](translation%20methods/1)
-- [Lab 2](translation%20methods/2), [report](translation%20methods/2/report.pdf)
-- [Lab 3](translation%20methods/3), [report](translation%20methods/3/report.md)
-- [Lab 4](https://github.com/Jovvik/ll1-parser-generator)
+### Labs
+
+- [1](translation%20methods/1)
+- [2](translation%20methods/2), [report](translation%20methods/2/report.pdf)
+- [3](translation%20methods/3), [report](translation%20methods/3/report.md)
+- [4](https://github.com/Jovvik/ll1-parser-generator)
+
+## Type theory
+
+### Labs
+
+[Lambda reduction with memoization](https://github.com/Jovvik/lambda-reduction)
 
 # Term 4
 
 ## Algorithms and data structures
+
+### Homework
 
 - [1.12](algorithms%20and%20data%20structures/term4/1.12.pdf)
 - [2.9](algorithms%20and%20data%20structures/term4/2.9.pdf)
@@ -43,6 +69,8 @@ Archive of various things I did at ITMO University. Large assignments are in sep
 # Term 3
 
 ## Algorithms and data structures
+
+### Homework
 
 - [2.5](algorithms%20and%20data%20structures/term3/2.5.pdf)
 - [7.9](algorithms%20and%20data%20structures/term3/7.9.pdf)
@@ -96,6 +124,10 @@ Archive of various things I did at ITMO University. Large assignments are in sep
 - [Lab 4](operating%20systems/4)
 - [Lab 5](operating%20systems/5)
 - [Lab 6](operating%20systems/6)
+
+## Kotlin client-server
+
+[Pastebin clone](https://github.com/Jovvik/bin)
 
 # Term 2
 
