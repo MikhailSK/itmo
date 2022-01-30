@@ -1,0 +1,54 @@
+\input{preamble.sty}
+
+\usepackage{svg}
+\usepackage{listings}
+
+% \usepackage{inconsolata}
+\lstset{basicstyle=\ttfamily,breaklines=true}
+
+\setmonofont{Inconsolata}
+
+\lhead{АиСД, задача 18.2}
+\lfoot{Михайлов Максим}
+\cfoot{}
+\rfoot{M3237}
+
+\begin{document}
+
+\section*{Условие}
+
+Отвечать на запросы: входит ли строка \(s\) в строку \(k\cdot t\) (k повторений строки t). Предподсчет за \(\mathcal{O}(|t|)\), ответ за \(\mathcal{O}(|s|)\).
+
+\section*{Решение}
+
+Преподсчитаем сжатое суффиксное дерево для строки \(2t\). Если \(|s| < t\), то эта задача --- просто проверка, что \(s\) подходит в дерево для \(2t\).
+
+Пусть \(|s| \ge t\). Тогда пусть префикс \(s\) длины \(t\) это строка \(f\).
+
+\(s\) входит в \(k\cdot t \iff s = m\cdot f + \text{pref}f\), где \(\text{pref}f\) --- некоторый префикс \(f\), см. рисунок.
+
+\begin{figure}[h]
+    \centering
+    \includesvg[scale=1.5]{images/ksf.svg}
+    \caption{Отсюда очевидно, что \(s = m\cdot f + \text{pref} f\)}
+\end{figure}
+
+Заметим, что \(f\) это некоторая подстрока \(2\cdot t\), поэтому мы можем его найти с помощью построенного суффиксного дерева. Спустимся по \(s\) в дереве на \(|t|\) символов. Пройденный путь есть \(f\). Если мы не смогли пройти, то ответ на запрос --- нет. Теперь, когда известен \(f\), в линию пройдём по \(s\) и проверим, что \(s = m\cdot f + \text{pref} f\).
+
+\begin{lstlisting}[language=Python]
+for i in 0..len(s):
+    if s[i] != f[i % len(f)]:
+        return false
+return true
+\end{lstlisting}
+
+Кроме того, необходимо проверить, что \(s\) не выходит за пределы \(k\cdot t\), т.е. \(\delta + |s| \le k\cdot |t|\). \(\delta\) можно тривиально получить при нахождении \(f\).
+
+\begin{figure}[h]
+    \includegraphics[scale=0.2]{images/kot_zabor.jpg}
+    \centering
+    \caption{Котёнок идет в линию по строке}
+\end{figure}
+
+
+\end{document}

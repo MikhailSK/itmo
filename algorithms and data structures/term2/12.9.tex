@@ -1,0 +1,68 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=1.5cm, bindingoffset=0cm, headheight=15pt]{geometry}
+
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+
+% \setmainfont{Linux Libertine}
+
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\makeatletter
+\renewcommand*{\@seccntformat}[1]{\csname the#1\endcsname\hspace{0.1cm}}
+\makeatother
+
+\pagestyle{fancy}
+\lhead{}
+\chead{Алгоритмы и структуры данных, задача 12.9}
+\cfoot{Михайлов Максим, М3137}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+%   frame=L,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue},
+%   keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\color{mygreen},
+%   identifierstyle=\color{blue},
+  stringstyle=\color{orange},                 
+  numbers=left,               
+  numbersep=7pt,
+}
+\lstset{escapechar=@,style=customc}
+
+\begin{document}
+    
+\section*{Условие}
+
+Дано дерево, над ним проводят секретные эксперименты. Каждый эксперимент $(v, d)$ состоит
+в том, что в вершине v распыляют вонючее вещество с вонючестью $d$. При этом для всех $x < d$
+уровень вони во всех вершинах на расстоянии $x$ увеличивается на $d - x$. Отвечать на запросы:
+провести эксперимент, найти текущий уровень вони в вершине.
+
+\section*{Решение}
+
+Заметим, что эта задача похожа на 12.7, поэтому тоже будем использовать центроидную декомпозицию с ДО и сортированными массивами.
+
+Разница с 12.7:
+\begin{enumerate}
+    \item Вычитаем из $d$ расстояние до следующего центроида, когда поднимаемся в него.
+    \item Когда запрос уходит из вершины (происходит \texttt{propagate}), в эту вершину прибавляется $d-l$, где $l$ --- расстояние до центроида, $d$ --- значение в запросе.
+    \item Чтобы избежать многократного увеличения значения в какой-либо вершине при одном запросе, будем передавать вместе с запросом номер этого запроса, также будем хранить номер последнего обработанного запроса в вершине. Тогда если в вершину приходит запрос, номер которого совпадает с последним обработанным, она его игнорит.
+\end{enumerate}
+
+\textbf{Асимптотика} : такая же, как в 12.7, т.е. $\mathcal O(\log^2 n)$, пока не вырождаемся в длинную арифметику с подсчетом номера запроса.
+
+\end{document}

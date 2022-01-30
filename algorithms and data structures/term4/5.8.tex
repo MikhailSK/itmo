@@ -1,0 +1,48 @@
+\input{preamble.sty}
+
+\lhead{АиСД, задача 5.8}
+\lfoot{Михайлов Максим}
+\cfoot{}
+\rfoot{M3237}
+
+\begin{document}
+
+\section*{Условие}
+
+Есть поле \(n \times n\), которое нужно полить удобрениями. Это можно сделать тремя способами: полить одну клетку \((i,j)\), это будет стоить \(c[i,j]\), можно полить целиком горизонталь \(i\), это будет стоить \(x[i]\), можно целиком вертикаль \(j\), это будет стоить \(y[j]\). Нужно полить все клетки хотя бы по одному разу, минимизировав суммарную стоимость.
+
+\section*{Решение}
+
+Рассмотрим следующий граф:
+
+\begin{figure}[h]
+    \centering
+    \includesvg{images/5.8.svg}
+\end{figure}
+
+\begin{itemize}
+    \item Вырезание ребра \(x_i\) удаляет все \textit{(и никакие другие)} пути \(s \stackrel{a_{ij}}{\rightsquigarrow} t\) \textit{(из \(s\) в \(t\) через \(a_{ij}\))}
+    \item Вырезание ребра \(y_i\) удаляет все пути \(s \stackrel{a_{ji}}{\rightsquigarrow} t\)
+    \item Вырезание ребра \(c_{ij}\) удаляет путь \(s \stackrel{a_{ij}}{\rightsquigarrow} t\)
+\end{itemize}
+
+Политость клетки \(i,j\) эквивалентна \(\nexists s \stackrel{a_{ij}}{\rightsquigarrow} t\), тогда несложно заметить, что политости всех клеток соответствует ребра минимального разреза, т.к. любой путь \(s \rightsquigarrow t\) проходит по \(a_{ij}\).
+
+Найдём минимальный разрез \(S, T\) и найдём все ребра \(\ev{u, v}\), такие что \(u\in S, v\in T\); они и будут ответом.
+
+\pagebreak
+
+Пояснение структуры графа для особо душных:
+\[V = \{s, t\} \cup \{s_i, r_i\}_{i = 1}^n \cup \{a_{i,j}, b_{i, j}\}_{i,j = 1}^n\]
+\[E = \{\ev{s, s_i}, \ev{r_i, t}\}_{i = 1}^n \cup \{\ev{s_i, a_{ij}}, \ev{a_{ij}, b_{ij}}, \ev{b_{ij}, r_j}\}_{i,j = 1}^n\]
+\[\begin{tabular}{L|L|L}
+        u      & w      & w\ev{u, w} \\ \hline
+        s      & s_i    & x_i        \\
+        r_i    & t      & y_i        \\
+        s_i    & a_{ij} & \infty     \\
+        a_{ij} & b_{ij} & c_{ij}     \\
+        b_{ij} & r_j    & \infty     \\
+        r_j    & t      & y_j
+    \end{tabular}\]
+
+\end{document}

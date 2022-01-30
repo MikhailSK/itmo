@@ -1,0 +1,67 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=1.5cm, bindingoffset=0cm, headheight=15pt]{geometry}
+
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+
+% \setmainfont{Linux Libertine}
+
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\makeatletter
+\renewcommand*{\@seccntformat}[1]{\csname the#1\endcsname\hspace{0.1cm}}
+\makeatother
+
+\pagestyle{fancy}
+\lhead{}
+\chead{Алгоритмы и структуры данных, задача 12.7}
+\cfoot{Михайлов Максим, М3137}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+%   frame=L,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue},
+%   keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\color{mygreen},
+%   identifierstyle=\color{blue},
+  stringstyle=\color{orange},                 
+  numbers=left,               
+  numbersep=7pt,
+}
+\lstset{escapechar=@,style=customc}
+
+\begin{document}
+    
+\section*{Условие}
+
+Дано дерево, вершины которого можно красить. Отвечать на запросы:
+\begin{itemize}
+    \item по заданным $(v, d, c)$ покрасить все вершины на расстоянии не больше $d$ от вершины $v$ в цвет $c$
+    \item узнать, какой сейчас цвет у вершины $v$
+\end{itemize}
+
+\section*{Решение}
+
+Эта задача похожа на задачу, разобранную на лекции \textit{(нахождение числа вершин на расстоянии от некоторой)}, но в структуре данных, которая заменяет сортированные массивы, нужно уметь делать присвоение на префиксе \textit{(покраска)}. Это умеет делать дерево отрезков, воспользуемся им.
+
+Разобьем дерево на центроидную декомпозицию, преподсчитаем расстояния до центроидов. Каждому центроиду дадим сортированный массив расстояний всех его детей \textit{(внуков, и т.д.)}, а также дадим дерево отрезков, где будут лежать цвета всех вершин в таком же порядке, как эти вершины лежат в сортнутом массиве.
+
+Запрос покраски в поддереве центроида выполняется так: \texttt{tree.set(0, i)}, где \texttt{i} - индекс самой далекой от центроида вершины, такой что $d_i \le d$. Этот индекс находится в массиве бинпоиском, как и в исходной задаче.
+
+Ленивый \texttt{propagate} дает $\mathcal O (\log n)$, все остальные операции - тоже полилог.
+
+
+\end{document}

@@ -1,0 +1,97 @@
+\input{preamble.sty}
+
+\usepackage{float}
+
+\lhead{АиСД, задача 2.5}
+\lfoot{Михайлов Максим}
+\cfoot{}
+\rfoot{M3237}
+
+\begin{document}
+
+\section*{Условие}
+
+Турниром называется ориентированный граф, в котором каждая пара вершин соединена ребром (в одну или другую сторону). Докажите, что в сильно связном турнире есть гамильтонов цикл.
+
+\section*{Решение}
+
+\subsection*{$\sphericalangle n=2$}
+
+\begin{figure}[h]
+    \includegraphics{images/two-tournament.pdf}
+    \centering
+    % \caption{Единственный возможный случай для $n=2$.}
+\end{figure}
+
+Очевидно этот граф --- не турнир.
+
+\subsection*{$\sphericalangle n>2$}
+
+Докажем по индукции, что в сильно связном турнире с $n$ вершинами есть простые циклы длин $3, 4\ldots n$.
+
+\subsection*{База}
+
+Докажем, что в любом сильно связном турнире есть простой цикл длины $3$.
+
+В каждом турнире есть король \textit{(вершина, из которой достижимы все вершины за $\le 2$ шага)}, пусть в рассматриваемом графе это вершина $v$. Т.к. $G$ --- турнир, все вершины делятся на 3 непустых множества:
+\begin{enumerate}
+    \item $A : \forall u\in A \ \ \exists u\to v$
+    \item $B : \forall u\in B \ \ \exists v\to u$
+    \item $\{v\}$
+\end{enumerate}
+
+$B$ --- тоже турнир, поэтому там есть король $w$. По определению существует путь $w\rightsquigarrow v$ длины $\le 2$, но очевидно длина этого пути не может быть равна $1$, т.к. тогда существовало бы ребро $w\to v$, что противоречит построению. Итого $\exists w\rightsquigarrow v$ длины $2$ и $\exists v\to w$ --- это цикл длины 3.
+
+Также можно использовать суждение, аналогичное суждению из 2 случая (см. ниже)
+
+\subsection*{Переход}
+
+Пусть в $G$ есть цикл $S$ с вершинами $s_1\ldots s_l, l<n$, докажем что $\exists$ цикл длины $l+1$.
+
+\subsubsection*{Первый случай}
+
+Пусть $\exists v\not\in S : \exists i, j : i\not=j, \exists s_i\to v, v\to s_j$:
+
+\begin{figure}[h]
+    \includegraphics{images/first-case.pdf}
+    \centering
+\end{figure}
+
+Тогда пойдем индексом $k$ от $i$ до $j$. Когда мы встретим $k$ такое, что $\exists v\to s_k$, то
+$s_k\ldots s_ls_1\ldots s_{k-1}v s_k$ --- цикл, т.к. для всех предыдущих $k$ $\not\exists v\to s_k$. Такое $k$ очевидно существует.
+
+\begin{minipage}{\linewidth}
+    \centering
+    \begin{minipage}{0.6\linewidth}
+        \begin{figure}[H]
+            \includegraphics{images/first-case-complete.pdf}
+            \centering
+        \end{figure}
+    \end{minipage}
+    \hspace{0.05\linewidth}
+    \begin{minipage}{0.27\linewidth}
+        \begin{figure}[H]
+            \begin{flushright}
+                \includegraphics[scale=0.15]{images/kot_osuzhdaet.jpg}
+                \caption{Котик осуждает формулу над ним, которая вылезла за отступ}
+            \end{flushright}
+        \end{figure}
+    \end{minipage}
+\end{minipage}
+
+Длина этого цикла $l+1$, этот случай окончен.
+
+\subsubsection*{Второй случай}
+
+Пусть условие первого случая не выполнилось. Тогда для каждой вершины $v$ либо все ребра до вершин $\in S$ исходящие, либо входящие. Поделим $G\setminus S$ на два множества $A$ и $B$ по этому признаку. Очевидно эти множества непустые, иначе граф не сильно связен (\textit{из КСС $S$ нет входящих или исходящих ребер}):
+
+\begin{figure}[h]
+    \includegraphics[scale=0.7]{images/second-case.pdf}
+    \centering
+\end{figure}
+
+Очевидно $\exists v\to w, v\in B, w\in A$, иначе нарушена связность. Но $\forall i\ \ \exists s_i\to v, w\to s_i$ по построению. Таким образом, $s_0\ldots s_l v w s_l$ --- цикл длины $>l$. $\square$
+
+
+
+\end{document}

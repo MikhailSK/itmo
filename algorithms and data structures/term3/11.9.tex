@@ -1,0 +1,36 @@
+\input{preamble.sty}
+
+\usepackage{listings}
+
+% \usepackage{inconsolata}
+\lstset{basicstyle=\ttfamily\footnotesize,breaklines=true}
+
+\setmonofont{Inconsolata}
+
+\lhead{АиСД, задача 11.9}
+\lfoot{Михайлов Максим}
+\cfoot{}
+\rfoot{M3237}
+
+\begin{document}
+
+\section{Условие}
+
+Дан взвешенный граф. Удалить максимальное число ребер, при условии что расстояние от $s$ до $t$ должно быть не больше $d$.
+
+\section{Решение}
+
+Найдём путь $s\to t$ с расстоянием $\le d$ и минимальным числом ребер. Тогда ответ --- удалить все ребра, кроме ребер этого пути.
+
+Алгоритм Форда-Беллмана считает динамику $d[u][k]$ --- минимальный вес пути $s\to u$ с $\le k$ ребер. Тогда мы можем найти искомый путь $\le d$ следующим образом:
+
+\begin{lstlisting}[language=Python]
+dp = ford-bellman()
+for k in 0 .. n-2:
+    if dp[t][k] <= d:
+        return k
+\end{lstlisting}
+
+После нахождения \texttt{k} искомый путь находится обратной динамикой.
+
+\end{document}

@@ -1,0 +1,72 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm, bindingoffset=0cm, headheight=15pt]{geometry}
+
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+% \usepackage{inconsolata}
+
+\pagestyle{fancy}
+\chead{Алгоритмы и структуры данных, задача 8.4}
+\cfoot{Михайлов Максим, M3137}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+%   frame=L,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue},
+%   keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\color{mygreen},
+%   identifierstyle=\color{blue},
+  stringstyle=\color{orange},                 
+  numbers=left,               
+  numbersep=7pt,
+}
+\lstset{escapechar=@,style=customc}
+
+\begin{document}
+
+\subsection*{Условие}
+
+Научитесть вычислять любую ассоциативную функцию на пути в дереве за $\mathcal O(\log n)$.
+
+\subsection*{Решение}
+
+Сделаем преподсчёт двоичных подъёмов вверх и вниз : \texttt{jmpup, jmpdown}, для каждого подъёма посчитаем ассоциативную функцию в соответствующую сторону, т.е. для случая, когда мы поднимаемся вверх и когда мы спускаемся вниз : \texttt{fup, fdown}. Это делается за $\mathcal O(n\log n)$, т.к. функция считается таким же ДП, как и сами подъемы.
+
+Чтобы найти путь, найдём LCA(начало пути, конец пути), после чего поднимемся от начала пути до LCA, считая ассоциативную функцию по подъемам, после чего спустимся от LCA до конца пути, также считая ассоциативную функцию. Т.к. двоичных подъемов/спусков до LCA $\mathcal O(\log n)$, итоговая ассимптотика $\mathcal O(\log n)$
+
+\begin{lstlisting}
+calc_fun(f, start, end)
+    res = 0
+    lca = LCA(start, end)
+    D = d[start] - d[lca]
+    curr = start
+    for k = log n ... 0
+        if D >= 2 ** k
+            res = f(res, fup[curr, k])
+            curr = jmpup[curr, k]
+            D -= 2 ** k
+    D = d[end] - d[lca]
+    for k = log n ... 0
+        if D >= 2 ** k
+            res = f(res, fdown[curr, k])
+            curr = jmpdown[curr, k]
+            D -= 2 ** k
+    return res
+\end{lstlisting}
+
+\texttt{d} --- массив глубин вершин, \texttt{0} --- нейтральный элемент для операции.
+
+\end{document}

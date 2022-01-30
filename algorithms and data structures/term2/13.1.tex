@@ -1,0 +1,75 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=1.5cm, bindingoffset=0cm, headheight=15pt]{geometry}
+
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+
+% \setmainfont{Linux Libertine}
+
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\makeatletter
+\renewcommand*{\@seccntformat}[1]{\csname the#1\endcsname\hspace{0.1cm}}
+\makeatother
+
+\pagestyle{fancy}
+\lhead{}
+\chead{Алгоритмы и структуры данных, задача 13.1}
+\cfoot{Михайлов Максим, М3137}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+%   frame=L,
+  xleftmargin=\parindent,
+  language=python,
+  showstringspaces=false,
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue},
+%   keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\color{mygreen},
+%   identifierstyle=\color{blue},
+  stringstyle=\color{orange},                 
+  numbers=left,               
+  numbersep=7pt,
+}
+\lstset{escapechar=@,style=customc}
+
+\begin{document}
+
+\section*{Условие}
+
+Сделать стек во внешней памяти. Время работы операций $\mathcal O(1/B)$.
+
+\section*{Решение}
+
+Будем хранить стек из $2B$ элементов (\texttt{st}) начала полного стека во внутренней памяти.
+
+\begin{lstlisting}
+pop():
+  if st.size == 0
+    load(st)
+  st.pop()
+
+push(x):
+  if st.size == 2 * B
+    unload(st[0:B])
+  st.push(x)
+\end{lstlisting}
+
+Асимптотика $\mathcal O(1/B)$, потому что между операциями чтения/записи есть хотя бы $B$ вызовов \texttt{push/pop}. Это так, потому что после каждой IO операции размер стека в памяти $B$, а следующая операция произойдет только когда размер стека $0$ или $2B$, чего можно достичь в $\ge B$ штук \texttt{push/pop}.
+
+\begin{figure}[b]
+  \includegraphics[scale=0.4]{cat.jpg}
+  \centering
+\end{figure}
+
+\end{document}

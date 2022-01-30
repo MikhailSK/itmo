@@ -1,0 +1,147 @@
+\input{preamble.sty}
+
+\lhead{АиСД, задача 11.2}
+\lfoot{Михайлов Максим}
+\cfoot{}
+\rfoot{M3237}
+
+\begin{document}
+
+\section{Условие}
+
+Научитесь генерировать большие числа Кармайкла с тремя большими простыми делителями.
+
+\section{Решение}
+
+\subsection{Обозначения}
+
+\begin{itemize}
+    \item \(\mathcal{C}\) --- множество всех чисел Кармайкла.
+    \item \(\mathcal{P}\) --- множество всех простых чисел.
+\end{itemize}
+
+\subsection{Теория}
+
+\begin{wrapfigure}{R}{0.5\textwidth}
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{images/motivation.jpg}
+        \caption{Кот, который мотивировал меня заниматься этой страшной задачей.}
+    \end{center}
+\end{wrapfigure}
+
+\begin{theorem}\itemfix
+    \begin{itemize}
+        \item \(\forall i \ \ p_i \in \mathcal{P}\)
+        \item \(n = \prod_i p_i\)
+        \item \(\forall i \ \ p_i - 1 \equiv 0 \mod n - 1\)
+    \end{itemize}
+    Тогда \(n \in \mathcal{C}\). В обратную сторону также верно.
+\end{theorem}
+\begin{proof}
+    \(\sphericalangle a : gcd(a, n) = 1\).
+
+    По теореме Ферма:
+    \begin{align*}
+        a^{p_i - 1} & \equiv 1 \mod p_j   \\
+        p_i - 1     & \equiv 0 \mod n - 1 \\
+        a^{n - 1}   & \equiv 1 \mod p_j   \\
+        a^{n - 1}   & \equiv 1 \mod n
+    \end{align*}
+\end{proof}
+
+\begin{theorem}\itemfix
+    \begin{itemize}
+        \item \(p \in \mathcal{P}\)
+        \item \(n = pu\)
+    \end{itemize}
+
+    Тогда \(p - 1 \equiv 0 \mod n - 1 \Leftrightarrow p - 1 \equiv 0 \mod u - 1\).
+\end{theorem}
+\begin{proof}
+    \[(n - 1) - (u - 1) = n - u = pu - u = (p - 1)u\]
+    Если \(p - 1\) делит ровно одно из \(\{n - 1, u - 1\}\), то левая часть не делится на \(p - 1\), а правая делится --- противоречие.
+\end{proof}
+
+\subsection{Первый метод}
+
+Будем искать \(n \in \mathcal{C} : n = p \cdot q \cdot r, p < q < r\). По теореме 1:
+\[\begin{cases}
+        p - 1 \equiv 0 \mod n - 1 \\
+        q - 1 \equiv 0 \mod n - 1 \\
+        r - 1 \equiv 0 \mod n - 1 \\
+    \end{cases}\]
+По теореме 2:
+\begin{equation}
+    \begin{cases}
+        p - 1 \equiv 0 \mod qr - 1 \\
+        q - 1 \equiv 0 \mod pr - 1 \\
+        r - 1 \equiv 0 \mod pq - 1
+    \end{cases}
+    \label{база}
+\end{equation}
+
+Если зафиксировать \(p, q\), то можно перебрать все \(d \equiv 0 \mod pq - 1\), такие что \(q < d\). Для каждого \(d\) нужно проверить, что \(d + 1 \in \mathcal{P}\). Если это так, третье условие выполнено.
+
+\subsection{Второй метод}
+
+Для \(p = 6N + 1, q = 12N + 1, r = 18N + 1\) условие \eqref{база} выполнено:
+\[\begin{cases}
+        6N \equiv 0 \mod 216 N^2 + 30N   \\
+        12N \equiv 0 \mod 108 N^2 + 24 N \\
+        18N \equiv 0 \mod 72 N^2 + 18 N
+    \end{cases} \]
+и нужно только проверять на простоту. Небольшой трюк: если для \(\tilde{N}\) \(p\) не простое, то \(2\tilde{N}\) и \(3 \tilde{N}\) рассматривать не нужно.
+
+\section{Анализ}
+
+\subsection{Первый метод}
+
+Генерировать все \(p, q < n : p,q\in \mathcal{P}\) занимает \(\mathcal{O}(n / \log \log n)\) и асимптотически мы найдём \(\frac{n^2}{\log^2 n}\) пар, т.е.
+\[\frac{\log^2 n}{n^2} \cdot \frac{n}{\log \log n} = \frac{\log^2 n}{n \log \log n}\]
+итераций на пару. Я не придумал, как оценить число делителей \(pq - 1\), поэтому дальше не анализируется.
+
+\subsection{Второй метод}
+
+Проверить на простоту детерминированно занимает \(\mathcal{O}(\log^6 n)\) с помощью AKS. Т.к. вероятность случайно выбрать простое число есть \(\Theta\left(\frac{1}{\log n}\right)\), то вероятность выбрать 3 простых числа --- \(\Theta\left(\frac{1}{\log^3 n}\right)\). Таким образом, получается \(3 \cdot \mathcal{O}(\log^6 n) \cdot \Theta(\log^3 n) = \mathcal{O}(\log^9 n)\).
+
+Ещё можно использовать модификацию AKS за \(\mathcal{O}(\log^3 n)\), которая работает, если гипотеза Агравала верна, и если мы выдадим неверный ответ, то заявляем всем, что мы её опровергли :).
+
+% \subsection{Третий метод}
+
+% Запишем \eqref{база} в другом виде:
+
+% \[
+%     \begin{cases}
+%         a(p - 1) = qr - 1 \\
+%         b(q - 1) = pr - 1 \\
+%         c(r - 1) = pq - 1
+%     \end{cases}
+% \]
+
+% Пусть \(\delta = bc - q^2\). При фиксированных \(p, с, \delta\) однозначно задается \(q\):
+
+% \begin{theorem}
+%     \[q - 1 = \frac{(p - 1)(p + c)}{\delta}\]
+% \end{theorem}
+% \begin{proof}
+%     \begin{align*}
+%         q - 1             & = \frac{pr - 1}{b}                        \\
+%                           & = \frac{pr - 1 + p - p}{b}                \\
+%                           & = \frac{p(r - 1) + (p - 1)}{b}            \\
+%                           & = \frac{\frac{p}{c}(pq - 1) + (p - 1)}{b} \\
+%                           & = \frac{\frac{p}{c}(pq - 1) + (p - 1)}{b} \\
+%                           & = \frac{p(pq - 1) + c(p - 1)}{bc}         \\
+%         bc(q - 1)         & = p(pq - 1) + c(p - 1)                    \\
+%                           & = p^2q - p + c(p - 1)                     \\
+%                           & = p^2q - p - p^2 + p^2 + c(p - 1)         \\
+%                           & = p^2(q - 1) - p + p^2 + c(p - 1)         \\
+%         (bc - p^2)(q - 1) & = p(p - 1) + c(p - 1)                     \\
+%         q - 1             & = \frac{(p + c)(p - 1)}{bc - p^2}         \\
+%     \end{align*}
+% \end{proof}
+
+% И следовательно однозначно задается \(r\).
+
+% Казалось бы, 
+
+\end{document}

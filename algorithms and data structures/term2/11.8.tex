@@ -1,0 +1,97 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=1.5cm, bindingoffset=0cm, headheight=15pt]{geometry}
+
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+
+% \setmainfont{Linux Libertine}
+
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\makeatletter
+\renewcommand*{\@seccntformat}[1]{\csname the#1\endcsname\hspace{0.1cm}}
+\makeatother
+
+\pagestyle{fancy}
+\lhead{}
+\chead{Алгоритмы и структуры данных, задача 11.8}
+\cfoot{Михайлов Максим, М3137}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+%   frame=L,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue},
+%   keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\color{mygreen},
+%   identifierstyle=\color{blue},
+  stringstyle=\color{orange},                 
+  numbers=left,               
+  numbersep=7pt,
+}
+\lstset{escapechar=@,style=customc}
+
+\begin{document}
+
+\section*{Условие}
+
+Пусть в каждой компоненте связности выполняется условие: $E - V \leq C$, где $E$ — число ребер,
+$V$ — число вершин, $C$ — небольшая константа. Как работать с такими графами?
+
+\section*{Решение}
+
+Из условия следует, что в каждой компоненте связности могут быть циклы, но их мало ($C$). Таким образом, эта задача --- более общий случай 11.7, поэтому сделаем все то же самое, как в 11.7, но будем хранить в корне каждой компоненты не одно фейковое ребро, а вектор из $\leq C$ этих ребер.
+
+\subsection{\texttt{cut}}
+Есть три случая:
+
+\begin{enumerate}
+    \item \textit{Режем фейковое ребро}: удаляем его из вектора.
+    \item \textit{Режем настоящее ребро, фейковых ребер нет в этой КС}: обычный \texttt{cut}.
+    \item \textit{Режем настоящее ребро, есть фейковые ребра}: обычный \texttt{cut}, потом перебираем все фейковые ребра из разрезанной КС и если некоторое из них соединяет вершины в разных КС, то по этому ребру происходит \texttt{link}. Если таких ребер нет, то надо все фейковые ребра раскидать по новым двум КС.
+
+          Для случая 3:
+          \begin{lstlisting}
+fakes = root(u).fakes
+vanilla_cut(u, v)
+for (edge : fakes)
+    if (!connected(edge.first. edge.second))
+        link(edge.first. edge.second)
+        break
+else // python-style, if no "break"
+    for (edge : fakes)
+        if (connected(edge.first, u))
+            u.parent.fakes.push_back(edge)
+        else
+            v.parent.fakes.push_back(edge)
+    \end{lstlisting}
+\end{enumerate}
+
+\subsection{\texttt{link}}
+Если линкуемые вершины лежат в одной и той же компоненте связности, то добавляем фейковое ребро в вектор, лежащий в корне этой КС. Иначе делаем обычный \texttt{link} и сливаем вектора фейковых ребер.
+
+\subsection{\texttt{connected}}
+Циклы не изменяют связность, поэтому эта операция не изменилась.
+
+\begin{figure}[h]
+    \includegraphics[scale=0.35]{kot.png}
+    \centering
+    % \caption{
+    %     \textit{кот}: я с 7 лабами за месяц;
+    %     \textit{масло}: +3 балла по алгосам
+    % }
+\end{figure}
+
+\end{document}
